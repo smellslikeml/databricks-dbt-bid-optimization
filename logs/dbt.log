@@ -1,0 +1,58 @@
+
+
+============================== 2022-08-10 17:29:09.971251 | 07704361-b0f6-4cff-8ffd-d628e89985cc ==============================
+17:29:09.971266 [info ] [MainThread]: Running with dbt=1.1.2
+17:29:09.971614 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/salma.mayorquin/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'databricks_dbt_bid_optimization', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+17:29:09.971744 [debug] [MainThread]: Tracking: tracking
+17:29:09.994526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be17fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be45520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be4a8b0>]}
+17:29:09.997229 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.8/site-packages/dbt/include/starter_project
+17:30:10.532425 [info ] [MainThread]: Profile databricks_dbt_bid_optimization written to /Users/salma.mayorquin/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+17:30:10.532890 [info ] [MainThread]: 
+Your new dbt project "databricks_dbt_bid_optimization" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+17:30:10.533300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be17f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be2e190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b6be2e6d0>]}
+
+
+============================== 2022-08-10 17:30:19.314004 | 3a19af52-da1e-4f8d-ab4b-f740e23e22d5 ==============================
+17:30:19.314016 [info ] [MainThread]: Running with dbt=1.1.2
+17:30:19.314326 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/salma.mayorquin/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+17:30:19.314557 [debug] [MainThread]: Tracking: tracking
+17:30:19.335087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e0e90280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e0e90340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e0e90190>]}
+17:30:19.708014 [debug] [MainThread]: Executing "git --help"
+17:30:19.724770 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+17:30:19.725485 [debug] [MainThread]: STDERR: "b''"
+17:30:19.731043 [debug] [MainThread]: Acquiring new databricks connection "debug"
+17:30:19.732693 [debug] [MainThread]: Using databricks connection "debug"
+17:30:19.732877 [debug] [MainThread]: On debug: select 1 as id
+17:30:19.733034 [debug] [MainThread]: Opening a new connection, currently in state init
+17:30:19.751456 [debug] [MainThread]: Databricks adapter: failed to connect: Error during request to server
+17:30:19.751631 [debug] [MainThread]: Databricks adapter: <class 'databricks.sql.exc.RequestError'>: Error during request to server
+17:30:19.751736 [debug] [MainThread]: Databricks adapter: attempt: 1/30
+17:30:19.751841 [debug] [MainThread]: Databricks adapter: bounded-retry-delay: None
+17:30:19.751928 [debug] [MainThread]: Databricks adapter: elapsed-seconds: 0.0032439231872558594/900.0
+17:30:19.752014 [debug] [MainThread]: Databricks adapter: error-message: 
+17:30:19.752099 [debug] [MainThread]: Databricks adapter: http-code: None
+17:30:19.752184 [debug] [MainThread]: Databricks adapter: method: OpenSession
+17:30:19.752268 [debug] [MainThread]: Databricks adapter: no-retry-reason: non-retryable error
+17:30:19.752351 [debug] [MainThread]: Databricks adapter: original-exception: [Errno 8] nodename nor servname provided, or not known
+17:30:19.752439 [debug] [MainThread]: Databricks adapter: query-id: None
+17:30:19.752534 [debug] [MainThread]: Databricks adapter: session-id: None
+17:30:19.752681 [debug] [MainThread]: Databricks adapter: Error while running:
+select 1 as id
+17:30:19.752768 [debug] [MainThread]: Databricks adapter: Database Error
+  failed to connect
+17:30:19.753362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e2150a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e2142280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90e21422e0>]}
+17:30:20.132893 [debug] [MainThread]: Connection 'debug' was properly closed.
