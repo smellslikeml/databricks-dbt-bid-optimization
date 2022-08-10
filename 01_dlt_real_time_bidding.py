@@ -23,10 +23,6 @@
 # MAGIC <!-- do not remove -->
 # MAGIC <img width="1px" src="https://www.google-analytics.com/collect?v=1&gtm=GTM-NKQ8TT7&tid=UA-163989034-1&cid=555&aip=1&t=event&ec=field_demos&ea=display&dp=%2F42_field_demos%2Fmedia%2Frtb%2Fnotebook_de&dt=MEDIA_USE_CASE">
 # MAGIC <!-- [metadata={"description":"Build DE pipeline to prep data for Data Analysis and ML.</i>", "authors":["layla.yang@databricks.com"]}] -->
-# MAGIC 
-# MAGIC 
-# MAGIC  Please use a cluster with **10.4 ML CPU** Runtime. 
-# MAGIC  
 
 # COMMAND ----------
 
