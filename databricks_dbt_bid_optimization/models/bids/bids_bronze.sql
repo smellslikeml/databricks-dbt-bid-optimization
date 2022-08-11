@@ -7,21 +7,8 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
-
-with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
-)
+{{ config(materialized='table', file_format='delta') }}
 
 select *
-from source_data
+from rtb_2
 
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null
