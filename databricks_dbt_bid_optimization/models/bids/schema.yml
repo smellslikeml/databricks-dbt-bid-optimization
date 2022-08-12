@@ -19,3 +19,40 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: bids_imp_silver
+    description: "Silver table for imp"
+    columns:
+      - name: imp_auction_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: bids_site_silver
+    description: "Silver table for site"
+    columns:
+      - name: site_auction_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: bids_gold
+    description: "Gold table for bids"
+    columns:
+      - name: device_auction_id
+        description: "Id for device"
+        tests:
+          - unique
+          - not_null
+      - name: imp_id
+        description: "Id for imp"
+        tests:
+          - unique
+          - not_null
+      - name: site_auction_id
+        description: "Id for site"
+        tests:
+          - unique
+          - not_null
