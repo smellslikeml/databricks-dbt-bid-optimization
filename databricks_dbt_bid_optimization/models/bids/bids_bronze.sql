@@ -7,14 +7,16 @@
     Try changing "table" to "view" below
 */
 
+<<<<<<< HEAD:databricks_dbt_bid_optimization/models/bids/my_first_dbt_model.sql
 {{ config(materialized='table') }}
 
 
 select *
 from rbt_2
+=======
+{{ config(materialized='table', file_format='delta') }}
 
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
+select *
+from rtb_2
+>>>>>>> 99d78d1525a0b1c9c19ead218b09c63d15cb965a:databricks_dbt_bid_optimization/models/bids/bids_bronze.sql
 
--- where id is not null
