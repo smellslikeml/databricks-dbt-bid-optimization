@@ -1,27 +1,17 @@
 -- Databricks notebook source
-with bronze as (
-    select
-        id as auction_id,
-        explode(imp) as imp
-    from {{ ref('bids_bronze') }}
-),
-
-get_keys as (
-    select
-        auction_id,
-        imp.*
-    from bronze
-)
-
 select
-    auction_id as imp_auction_id,
-    bidfloor as imp_bidfloor,
-    id as imp_id,
-    instl as imp_instl,
-    pmp as imp_pmp,
-    secure as imp_secure,
-    tagid as imp_tagid,
-    banner.h as imp_banner_h,
-    banner.pos as imp_banner_pos,
-    banner.w as imp_banner_w
-from get_keys
+    id as site_auction_id,
+    regs.ext.gdpr as site_gdpr_status,
+    site.cat as site_cat,
+    site.content as site_content,
+    site.domain as site_domain,
+    site.id as site_id,
+    site.keywords as site_keywords,
+    site.name as site_name,
+    site.page as site_page,
+    site.pagecat as site_pagecat,
+    site.privacypolicy as site_privacypolicy,
+    site.publisher.id as site_publisher_id,
+    site.ref as site_ref
+from {{ ref('bids_bronze') }}
+

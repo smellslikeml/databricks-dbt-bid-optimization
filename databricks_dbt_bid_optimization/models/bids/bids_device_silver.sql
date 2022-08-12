@@ -2,6 +2,7 @@
 -- Use the `ref` function to select from other models
 
 select
+id device_auction_id,
 device.carrier device_carrier,
 device.connectiontype device_connectiontype,
 device.devicetype device_devicetype,
